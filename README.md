@@ -103,6 +103,7 @@ z = c AND d     # z is equivalent to c AND d, so z is false
  
 # 16 operators
 
+```
 0 null
 1 AND
 2 inhibition
@@ -119,4 +120,5 @@ z = c AND d     # z is equivalent to c AND d, so z is false
 13 implication
 14 NAND
 15 identity
+```
 

@@ -100,7 +100,23 @@ c = 1
 d = 0
 z = c AND d     # z is equivalent to c AND d, so z is false
 ```
-
-# NAND, AND, OR, 
+ 
 # 16 operators
+
+0 null
+1 AND
+2 inhibition
+3 transfer
+4 inhibition
+5 transfer
+6 XOR
+7 OR
+8 NOR
+9 equivalence (XNOR)
+10 NOT
+11 implication
+12 NOT
+13 implication
+14 NAND
+15 identity
 

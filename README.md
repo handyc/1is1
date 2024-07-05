@@ -20,7 +20,7 @@ on requirements for a variable at any given time.
 - each string is evaluated lazily at various resolutions depending on its need within an application
 
 
-# examples
+# example equality declarations
 
 x=5
 
@@ -42,4 +42,11 @@ x="tree"
 
 https://en.wikipedia.org/wiki/Equals_sign
 
+# program execution
 
+programs are sequences of equalities that execute from top to bottom
+
+# hello world
+
+message = "hello world!"
+return = output(message)

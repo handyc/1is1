@@ -114,10 +114,10 @@ z = c AND d     # z is equivalent to c AND d, so z is false
 7 OR
 8 NOR
 9 equivalence (XNOR)
-10 NOT-A
-11 implication (if A then B)
-12 NOT-B
-13 implication (if B then A)
+10 NOT-B
+11 implication (A OR NOT-B)
+12 NOT-A
+13 implication (B OR NOT-A)
 14 NAND
 15 identity (true)
 ```

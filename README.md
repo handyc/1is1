@@ -4,6 +4,15 @@
 
 1=1
 
+The primary distinguishing feature of this language is in its use of the = sign
+to indicate both assignment and equality.
+
+In 1is1, variables are created in pairs through the use of equality expressions.
+
+Variables can be simple or complex, and are evaluated to various degrees depending
+
+on requirements for a variable at any given time.
+
 # examples
 
 x=5

@@ -61,13 +61,16 @@ return = output(message)
 
 message = "1is1 demo"            # message and "1is1 demo" are equivalent
 
-f(x) = output(message)           # f(x) and output(message) are equivalent, therefore x takes the same role as message in f(x)
+f(x) = output(message)           # f(x) and output(message) are equivalent,
+                                 # therefore x takes the same role as message in f(x)
 
 x = "hi everybody!"              # x and "hi everybody!" are equivalent
 
-return = f(x)                    # the value of return is equivalent to the value of resolving f(x) -- since x is known from above, the function is executed
+return = f(x)                    # the value of return is equivalent to the value of resolving f(x) --
+                                 # since x is known from above, the function is executed
 
-                                 # the text "hi everybody!" is displayed on the screen but "1is1 demo" is not displayed
+                                 # the text "hi everybody!" is displayed on the screen
+                                 # but "1is1 demo" is not displayed
 ```
                                  
 

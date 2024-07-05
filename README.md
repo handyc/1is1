@@ -107,17 +107,17 @@ z = c AND d     # z is equivalent to c AND d, so z is false
 0 null (false)
 1 AND
 2 inhibition A AND NOT-B
-3 transfer
+3 transfer (A)
 4 inhibition B AND NOT-A
-5 transfer
+5 transfer (B)
 6 XOR
 7 OR
 8 NOR
 9 equivalence (XNOR)
 10 NOT-B
-11 implication (A OR NOT-B)
+11 implication (if B then A)
 12 NOT-A
-13 implication (B OR NOT-A)
+13 implication (if A then B)
 14 NAND
 15 identity (true)
 ```

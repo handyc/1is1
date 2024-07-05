@@ -19,6 +19,8 @@ on requirements for a variable at any given time.
 
 - each string is evaluated lazily at various resolutions depending on its need within an application
 
+- dynamically and weakly typed
+  
 
 # example equality declarations
 

@@ -21,3 +21,7 @@ x + y = a * 3
 f(x) = 1
 
 f(x) = g(y)
+
+https://en.wikipedia.org/wiki/Equals_sign
+
+

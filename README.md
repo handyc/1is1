@@ -72,5 +72,22 @@ return = f(x)                    # the value of return is equivalent to the valu
                                  # the text "hi everybody!" is displayed on the screen
                                  # but "1is1 demo" is not displayed
 ```
-                                 
+
+# still more complexity
+
+```
+# this program outputs the text "hi everybody!" through a function alias
+
+url = "http://www.example.com"   # url and "http://www.example.com" are equivalent
+message = browser(url)           # message and browser(url) are equivalent
+                                 # browser(x) is a built in function to return the
+                                 # contents of a webpage
+
+return = output(message)         # output the contents of the webpage to the screen
+```
+                    
+
+# coming soon: logic
+# NAND, AND, OR, 
+# 16 operators
 

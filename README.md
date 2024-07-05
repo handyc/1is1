@@ -92,8 +92,8 @@ return = output(message)         # output the contents of the webpage to the scr
 ```
 x = 1 + 5        # x is equal to 1 + 5 which evaluates to 6, so x = 6
 
-a = "pizza"
-b = "hamburgers"
+a = "hamburgers"
+b = "pizza"
 y = a AND b     # y is equivalent to "hamburgers and pizza"
 
 c = 1

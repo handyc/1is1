@@ -13,6 +13,9 @@ Variables can be simple or complex, and are evaluated to various degrees dependi
 
 on requirements for a variable at any given time.
 
+- whitespace does not count
+  
+
 # examples
 
 x=5

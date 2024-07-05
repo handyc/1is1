@@ -87,7 +87,20 @@ return = output(message)         # output the contents of the webpage to the scr
 ```
                     
 
-# coming soon: logic
+# logic
+
+```
+x = 1 + 5        # x is equal to 1 + 5 which evaluates to 6, so x = 6
+
+a = "pizza"
+b = "hamburgers"
+y = a AND b     # y is equivalent to "hamburgers and pizza"
+
+c = 1
+d = 0
+z = c AND d     # z is equivalent to c AND d, so z is false
+```
+
 # NAND, AND, OR, 
 # 16 operators
 

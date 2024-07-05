@@ -38,6 +38,8 @@ f(x) = 1
 
 f(x) = g(y)
 
+x="tree"
+
 https://en.wikipedia.org/wiki/Equals_sign
 
 

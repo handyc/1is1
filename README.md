@@ -56,17 +56,17 @@ return = output(message)
 
 # more complexity
 
-/# this program outputs the text "hi everybody!" through a function alias
 
-message = "1is1 demo"            # message and "1is1 demo" are equivalent
+`# this program outputs the text "hi everybody!" through a function alias
 
-f(x) = output(message)           # f(x) and output(message) are equivalent, therefore x takes the same role as message in f(x)
+`message = "1is1 demo"            # message and "1is1 demo" are equivalent
 
-x = "hi everybody!"              # x and "hi everybody!" are equivalent
+`f(x) = output(message)           # f(x) and output(message) are equivalent, therefore x takes the same role as message in f(x)
 
-return = f(x)                    # the value of return is equivalent to the value of resolving f(x) -- since x is known from above, the function is executed
+`x = "hi everybody!"              # x and "hi everybody!" are equivalent
 
-                                 # the text "hi everybody!" is displayed on the screen but "1is1 demo" is not displayed
+`return = f(x)                    # the value of return is equivalent to the value of resolving f(x) -- since x is known from above, the function is executed
 
+`                                 # the text "hi everybody!" is displayed on the screen but "1is1 demo" is not displayed
                                  
 

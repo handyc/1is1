@@ -1,8 +1,6 @@
 # 1is1
 
-1is1 experimental programming language
-
-1=1
+1is1 ("one is one") experimental programming language
 
 The primary distinguishing feature of this language is in its use of the = sign
 to indicate both assignment and equality.

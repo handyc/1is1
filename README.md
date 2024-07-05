@@ -104,21 +104,32 @@ z = c AND d     # z is equivalent to c AND d, so z is false
 # 16 operators
 
 ```
-0 null
+0 null (false)
 1 AND
-2 inhibition
+2 inhibition A AND NOT-B
 3 transfer
-4 inhibition
+4 inhibition B AND NOT-A
 5 transfer
 6 XOR
 7 OR
 8 NOR
 9 equivalence (XNOR)
-10 NOT
-11 implication
-12 NOT
-13 implication
+10 NOT-A
+11 implication (if A then B)
+12 NOT-B
+13 implication (if B then A)
 14 NAND
-15 identity
+15 identity (true)
+```
+
+# variables and functions are both first class entities
+
+- equivalences as first class entities
+
+# automatic object creation
+
+```
+x.size = 16      # implies there is an object x
+
 ```
 

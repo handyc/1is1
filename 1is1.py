@@ -1,11 +1,12 @@
-version="1is1 interpreter 0.1"
+version="1is1 interpreter 0.2"
 print(version)
 string = ""
+prompt = "hello: "
 while(string != 'quit()'):
-    prompt = "hello: "
     string = input(prompt)
     if "=" in string:
         equality=string.split("=")
+        print("Creating new variables: ", end="")
         for variable in equality:
             print(variable.strip() + ", ", end="")
         print("")

@@ -144,10 +144,12 @@ x.size = 16      # implies there is an object x
 
 ```
 
-input(x)      # take value for x from stdin / keyboard
+input(x)       # take value for x from stdin / keyboard
 output(x)      # display value in x to stdout / screen
 
 browser(x)     # query internal headless browser
                # and return contents at x URL
+
+f16(a, b, func) # execute boolean function func on a, b
                
 ```

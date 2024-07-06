@@ -143,7 +143,10 @@ x.size = 16      # implies there is an object x
 # built in functions
 
 ```
-output(x)      # display value in x to screen
+
+input(x)      # take value for x from stdin / keyboard
+output(x)      # display value in x to stdout / screen
+
 browser(x)     # query internal headless browser
                # and return contents at x URL
                

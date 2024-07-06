@@ -104,22 +104,22 @@ z = c AND d     # z is equivalent to c AND d, so z is false
 # 16 operators
 
 ```
-0 null (false)
-1 AND
-2 inhibition A AND NOT-B
-3 transfer (A)
-4 inhibition B AND NOT-A
-5 transfer (B)
-6 XOR
-7 OR
-8 NOR
-9 equivalence (XNOR), iff A then B
-10 NOT-B
-11 implication (if B then A)
-12 NOT-A
-13 implication (if A then B)
-14 NAND
-15 identity (true)
+F  0 null (false)
+^  1 AND
+  2 inhibition A AND NOT-B
+A  3 transfer (A)
+  4 inhibition B AND NOT-A
+B  5 transfer (B)
+⊕  6 XOR
+∨  7 OR
+↓ 8 NOR
+⊙ 9 equivalence (XNOR), iff A then B
+!B  10 NOT-B
+→ 11 implication (if B then A)
+!A  12 NOT-A
+→ 13 implication (if A then B)
+!^  14 NAND
+T 15 identity (true)
 ```
 
 ```

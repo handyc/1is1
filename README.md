@@ -194,6 +194,18 @@ answer = resolve("This dog is tired" -> "This dog is sleepy")  # determine if th
 return = output(answer)                                        # display true to screen, store success in return
 ```
 
+# grouped equivalences
+
+various equivalences may work together in a group to achieve finer control over relationships
+
+```
+
+"sleepy" = "tired"
+"exhausted" = "sleepy"
+"tuckered out" = "sleepy"
+
+```
+
 # seriously?
 
 Yes but it's an experimental language, you may or may not get anything out of it

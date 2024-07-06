@@ -153,9 +153,18 @@ browser(x)     # query internal headless browser
 resolve(x)     # force x to resolve to the most simplified level
 
 f16(func, a, b) # execute boolean function func on a, b
+
+```
+
+examples:
+```
+keypress = input(x)                       # the x is not necessary? wait for keypress and store in keypress
+return = output("Hey buddy")              # displays "Hey buddy" on the screen
+page = browser("https://example.com")     # requests page at example.com and stores contents in page
+answer = resolve(7 + 3)     # resolves to 10 and stores 10 in answer
+potato = resolve(output("hi") + browser("https://example.com"))
+
 f16(6, 1, 3) # execute boolean function 6 on 1, 3 meaning 1 XOR 3
 f16("inhibition", 1, 3) # execute boolean function "inhibition" on 1, 3 meaning 1 AND !3
-f16("implication", 1, 3) # execute boolean function "implication" on 1, 3 meaning 1->3
-
-               
+f16("implication", 1, 3) # execute boolean function "implication" on 1, 3 meaning 1->3            
 ```

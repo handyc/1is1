@@ -1,5 +1,5 @@
 import os, sys
-version="1is1 interpreter 0.7"; print(version)
+version="1is1 interpreter 0.71"; print(version)
 def f1is1resolve(x):
     if("input" in x):
         xe=x.split("input("); xo=xe[1].split(")"); f1is1input(xo[0])
@@ -20,14 +20,13 @@ def f1is1output(x):
     print(x)
 def f16(x):
     print(x)
-string = ""; prompt = "\nhello: "
+dictionary = {}; string = ""; prompt = "\nhello: "
 if len(sys.argv) > 1:
     filename = sys.argv[1]
     f = open(filename, "r"); r = f.readlines(); f.close()
     for line in r:
         f1is1resolve(line)
 else:
-    dictionary = {}
     while(string != 'quit()'):
         string = input(prompt)
         if "=" in string:

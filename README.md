@@ -168,3 +168,18 @@ f16(6, 1, 3) # execute boolean function 6 on 1, 3 meaning 1 XOR 3
 f16("inhibition", 1, 3) # execute boolean function "inhibition" on 1, 3 meaning 1 AND !3
 f16("implication", 1, 3) # execute boolean function "implication" on 1, 3 meaning 1->3            
 ```
+
+# nameless, fuzzy equivalences
+
+You can equate two strings without explaining why or providing any name for the equivalence
+
+Equivalences do not have to evaluate as true in order to be well formed
+
+Examples:
+
+"This dog is sleepy" = "this dog is tired"
+
+"I love you" = "我愛你"
+
+"5" = "4"
+

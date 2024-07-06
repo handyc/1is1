@@ -1,5 +1,18 @@
-version="1is1 interpreter 0.2"
+version="1is1 interpreter 0.3"
 print(version)
+
+def f1is1resolve(x):
+    print(x)
+
+def f1is1browser(x):
+    print(x)
+
+def f1is1input(x):
+    print(x)
+
+def f1is1output(x):
+    print(x)
+
 string = ""
 prompt = "hello: "
 while(string != 'quit()'):

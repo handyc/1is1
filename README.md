@@ -212,6 +212,28 @@ various equivalences may work together in a group to achieve finer control over 
 
 "green" = "blue" = "color" = "turquoise" = "cyan"
 
+
+# all variables are related
+
+Since all variables in 1is1 are introduced in equalities, variables are always created in sets of two or more.
+
+A comparison of any two variables is done through the equality symbol =, which both creates and evaluates.
+
+For that reason, all of the variables that interact in a 1is1 program have some relationship to all of the others.
+
+Consider the following examples:
+
+a = 1                  # a variable 'a' has the value 1
+
+a = b + 2              # 'a' is equivalent to 'b + 2'
+
+a = c + 3              # 'a' is equivalent to 'c + 3'
+
+c - 1 = d + 22e        # 'c-1' is equivalent to 'd + 22e'
+
+How can we determine the relationship between 'a' and 'd + 22e'?
+
+
 # seriously?
 
 Yes but it's an experimental language, you may or may not get anything out of it

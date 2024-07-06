@@ -183,3 +183,9 @@ Examples:
 
 "5" = "4"
 
+# seriously?
+
+Yes but it's an experimental language, you may or may not get anything out of it
+
+It's not meant to make commercial products, don't expect to make your next website with it
+

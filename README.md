@@ -66,8 +66,8 @@ f(x) = output(message)           # f(x) and output(message) are equivalent,
 
 x = "hi everybody!"              # x and "hi everybody!" are equivalent
 
-return = f(x)                    # the value of return is equivalent to the value of resolving f(x) --
-                                 # since x is known from above, the function is executed
+return = f(x)                    # value of return is equivalent to resolving f(x) --
+                                 # x is known from above, so the function is executed
 
                                  # the text "hi everybody!" is displayed on the screen
                                  # but "1is1 demo" is not displayed
@@ -122,6 +122,13 @@ z = c AND d     # z is equivalent to c AND d, so z is false
 15 identity (true)
 ```
 
+```
+A [0]op B returns false
+A [1]op B returns A AND B
+A [2]op B returns A AND NOT-B
+...
+```
+
 # variables and functions are both first class entities
 
 - equivalences as first class entities
@@ -133,3 +140,9 @@ x.size = 16      # implies there is an object x
 
 ```
 
+# built in functions
+
+output(x)      # display value in x to screen
+browser(x)     # query internal headless browser
+               # and return contents at x URL
+               

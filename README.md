@@ -185,13 +185,14 @@ Examples:
 
 # boolean functions on nameless equivalences
 
+```
 "This dog is sleepy" = "this dog is tired"   # equate the two phrases
-
 answer = resolve("This dog is tired" -> "This dog is sleepy")  # determine if this dog is tired implies this dog is sleepy
                                                                # yes, it does
                                                                # store true in answer
 
 return = output(answer)                                        # display true to screen, store success in return
+```
 
 # seriously?
 

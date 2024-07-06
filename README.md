@@ -206,6 +206,12 @@ various equivalences may work together in a group to achieve finer control over 
 
 ```
 
+# equivalence chaining
+
+"sleepy" = "exhausted" = "tired" = "tuckered out"
+
+"green" = "blue" = "color" = "turquoise" = "cyan"
+
 # seriously?
 
 Yes but it's an experimental language, you may or may not get anything out of it

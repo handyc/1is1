@@ -150,6 +150,8 @@ output(x)      # display value in x to stdout / screen
 browser(x)     # query internal headless browser
                # and return contents at x URL
 
+resolve(x)     # force x to resolve to the most simplified level
+
 f16(func, a, b) # execute boolean function func on a, b
 f16(6, 1, 3) # execute boolean function 6 on 1, 3 meaning 1 XOR 3
 f16("inhibition", 1, 3) # execute boolean function "inhibition" on 1, 3 meaning 1 AND !3

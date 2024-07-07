@@ -76,7 +76,7 @@ return = f(x)                    # value of return is equivalent to resolving f(
 # still more complexity
 
 ```
-# this program outputs the text "hi everybody!" through a function alias
+# this program outputs the text content from a website at example.com
 
 url = "http://www.example.com"   # url and "http://www.example.com" are equivalent
 message = browser(url)           # message and browser(url) are equivalent

@@ -234,6 +234,9 @@ c - 1 = d + 22e        # 'c-1' is equivalent to 'd + 22e'
 
 How can we determine the relationship between 'a' and 'd + 22e'?
 
+# all variables are strings, all strings are functions
+
+yeah
 
 # seriously?
 

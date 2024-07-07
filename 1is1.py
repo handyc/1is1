@@ -1,5 +1,5 @@
 import os, sys
-version="1is1 interpreter 0.742"; print(version)
+version="1is1 interpreter 0.743"; print(version)
 stack={} # allocate 1is1 stack
 
 def f1is1output(outmsg):
@@ -27,7 +27,7 @@ def f1is1resolve(x):
     else:
         print(string)
     if('"' in x):
-        newstring=(x.split('"')[1])
+        newstring=(x.split('"')[1].strip())
         stack.update({leftside:newstring})
         #print("1")
     if("input" in x):
@@ -71,7 +71,9 @@ if len(sys.argv) > 1:
     filename = sys.argv[1]
     f = open(filename, "r"); r = f.readlines(); f.close()
     for line in r:
-        f1is1resolve(line)
+        line2=line.replace(" =", "=")
+        line3=line2.replace("= ", "=")
+        f1is1resolve(line3)
 else:
     while(string != 'quit()'):
         string = input(prompt)

@@ -1,10 +1,18 @@
 import os, sys
-version="1is1 interpreter 0.72"; print(version)
+version="1is1 interpreter 0.73"; print(version)
+stack={} # allocate 1is1 stack
+
 def f1is1resolve(x):
+    if('"' in x):
+        newstring=(x.split('"')[1])
+        stack.update({"message":newstring})
     if("input" in x):
         xe=x.split("input("); xo=xe[1].split(")"); f1is1input(xo[0])
     if("output" in x):
-        xe=x.split("output("); xo=xe[1].split(")"); f1is1output(xo[0])
+        xe=x.split("output("); xo=xe[1].split(")");
+        #print(stack[(xo[0])])
+        outmsg=(stack[(xo[0])])
+        f1is1output(outmsg)
     if("resolve" in x):
         xe=x.split("resolve("); xo=xe[1].split(")"); f1is1resolve(xo[0])
     if("browser" in x):

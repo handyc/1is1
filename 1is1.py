@@ -1,5 +1,5 @@
 import os, sys
-version="1is1 interpreter 0.743"; print(version)
+version="1is1 interpreter 0.744"; print(version)
 stack={} # allocate 1is1 stack
 
 def f1is1output(outmsg):
@@ -14,14 +14,15 @@ def f1is1resolve(x):
         stack.update({leftside.strip():rightside.strip()})
         neighbor=""
         head=equality[0]
-        #print("stack: " + str(stack))
-        #print("\nCreating variables: ", end="")
+        print("stack: " + str(stack))
+        print("\nCreating variables: ", end="")
         for variable in equality:
             stripped = variable.strip()
             entry.update({stripped:neighbor})
-            #print(stripped + ", ", end="")
+            print(stripped + ", ", end="")
             neighbor=stripped
             stack.update({head.strip():entry})
+        print("")
         stack.update({x.strip():entry})
         #dictionary.update({x:entry})
     else:

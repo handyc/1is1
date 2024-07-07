@@ -1,18 +1,26 @@
 import os, sys
-version="1is1 interpreter 0.74"; print(version)
+version="1is1 interpreter 0.741"; print(version)
 stack={} # allocate 1is1 stack
+
+def f1is1output(outmsg):
+    print(outmsg)
 
 def f1is1resolve(x):
     if('"' in x):
         newstring=(x.split('"')[1])
         stack.update({"message":newstring})
-        print("1")
+        #print("1")
     if("input" in x):
         xe=x.split("input("); xo=xe[1].split(")"); f1is1input(xo[0])
-        print("2")
+        #print("2")
     if("output" in x):
         xe=x.split("output("); xo=xe[1].split(")");
+        if('"' in xo):
+            newstring=(xo.split('"')[1])
+            stack.update({xo:newstring})
         #print(stack[(xo[0])])
+        if not xo[0] in stack:
+            stack.update({xo[0]:xo[0]})
         outmsg=(stack[(xo[0])])
         print(outmsg)
         f1is1output(outmsg)
@@ -31,8 +39,6 @@ def f1is1browser(x):
 def f1is1input(prompt):
     string = input(prompt)
     return string
-def f1is1output(outmsg):
-    print(outmsg)
 def f16(x):
     print(x)
 dictionary = {}; string = ""; prompt = "\nhello: "
@@ -55,10 +61,9 @@ else:
                 print(stripped + ", ", end="")
                 neighbor=stripped
                 stack.update({head:entry})
-            #stack.update({string:entry})
+            stack.update({string:entry})
             dictionary.update({string:entry})
             f1is1resolve(string)
-
         else:
             print(string)
 print(stack);

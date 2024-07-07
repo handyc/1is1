@@ -1,5 +1,5 @@
 import os, sys
-version="1is1 interpreter 0.71"; print(version)
+version="1is1 interpreter 0.72"; print(version)
 def f1is1resolve(x):
     if("input" in x):
         xe=x.split("input("); xo=xe[1].split(")"); f1is1input(xo[0])
@@ -42,4 +42,6 @@ else:
         else:
             print(string)
 print(dictionary);
+for entry in dictionary:
+    print(entry + " : " + str(dictionary[entry]))
 print("1is1"); print("Goodbye!")
